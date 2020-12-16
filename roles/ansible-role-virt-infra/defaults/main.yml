@@ -36,7 +36,7 @@ virt_infra_ssh_key_size: "2048"
 virt_infra_ssh_key_type: "rsa"
 
 # Whether to enable SSH password auth
-virt_infra_ssh_pwauth: true
+virt_infra_ssh_pwauth: false
 
 # Networks are a list, you can add more than one
 # "type" is optional, both "nat" and "bridge" are supported
