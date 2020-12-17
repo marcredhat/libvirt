@@ -2,7 +2,7 @@
 ## YAML based inventory, see:
 ## https://docs.ansible.com/ansible/latest/plugins/inventory/yaml.html
 #
-## Simple example using defaults to spin up 3 CentOS guests
+## Simple example using defaults to spin up 5 CentOS guests
 kvmhost:
   hosts:
        vb0632.halxg.cloudera.com
@@ -10,6 +10,6 @@ kvmhost:
      ansible_connection: local
 simple:
   hosts:
-    simple-centos-7-[0:2]:
+    base-centos-7-[0:4]:
       ansible_python_interpreter: /usr/bin/python
   vars:

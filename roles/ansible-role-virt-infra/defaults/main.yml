@@ -20,9 +20,9 @@ virt_infra_password: "password"
 
 # VM specs for guests
 # See virt-install manpage for supported values
-virt_infra_ram: "1024"
+virt_infra_ram: "40000"
 virt_infra_ram_max: "{{ virt_infra_ram }}"
-virt_infra_cpus: "1"
+virt_infra_cpus: "6"
 virt_infra_cpus_max: "{{ virt_infra_cpus }}"
 virt_infra_cpu_model: "host-passthrough"
 virt_infra_machine_type: "q35"
@@ -51,7 +51,7 @@ virt_infra_networks:
 # Disks, support various libvirt options
 # We generally don't set them though and leave it to hypervisor default
 # See virt-install manpage for supported values
-virt_infra_disk_size: "20"
+virt_infra_disk_size: "2000"
 virt_infra_disk_bus: "scsi"
 virt_infra_disk_io: "threads"
 virt_infra_disk_cache: "writeback"
